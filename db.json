@@ -1,0 +1,40 @@
+{
+    "livros": [
+      {
+        "id": 1,
+        "titulo": "O Senhor dos Anéis",
+        "descricao": "Uma obra épica de fantasia.",
+        "imagem": "assets/senhor dos aneis livro.jpg",
+        "detalhe": "Autor: J.R.R. Tolkien"
+      },
+      {
+        "id": 2,
+        "titulo": "1984",
+        "descricao": "Uma distopia sobre um futuro totalitário.",
+        "imagem": "assets/1984 livro.jpeg",
+        "detalhe": "Autor: George Orwell"
+      },
+      {
+        "id": 3,
+        "titulo": "Dom Quixote",
+        "descricao": "As aventuras de um cavaleiro louco.",
+        "imagem": "assets/dom quixote livro.jpeg",
+        "detalhe": "Autor: Miguel de Cervantes"
+      },
+      {
+        "id": 4,
+        "titulo": "O Pequeno Príncipe",
+        "descricao": "Uma história poética sobre um pequeno príncipe que viaja entre planetas.",
+        "imagem": "assets/pequeno principe livro.jpeg",
+        "detalhe": "Autor: Antoine de Saint-Exupéry"
+      },
+      {
+        "id": 5,
+        "titulo": "Moby Dick",
+        "descricao": "A épica perseguição de uma baleia branca.",
+        "imagem": "assets/moby dick livro.jpeg",
+        "detalhe": "Autor: Herman Melville"
+      }
+    ]
+  }
+  
