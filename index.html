@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca de Livros</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1 class="my-4">Biblioteca de Livros</h1>
+    <div id="livros" class="row">
+      <!-- Cards serão inseridos aqui -->
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('http://localhost:3000/livros')
+        .then(response => response.json())
+        .then(data => {
+          const livrosContainer = document.getElementById('livros');
+          data.forEach(livro => {
+            const card = document.createElement('div');
+            card.className = 'col-md-4';
+            card.innerHTML = `
+              <div class="card">
+                <img src="${livro.imagem}" class="card-img-top" alt="${livro.titulo}">
+                <div class="card-body">
+                  <h5 class="card-title">${livro.titulo}</h5>
+                  <p class="card-text">${livro.descricao}</p>
+                  <p class="card-text"><small class="text-muted">${livro.detalhe}</small></p>
+                </div>
+              </div>
+            `;
+            livrosContainer.appendChild(card);
+          });
+        })
+        .catch(error => console.error('Erro ao carregar os dados:', error));
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
