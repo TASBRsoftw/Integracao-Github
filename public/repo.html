@@ -22,47 +22,35 @@
     <div class="container mt-12 py-5">
         <div class="row mt-12">
             <div class="col-md-12">
-                <h2 class="mb-4">Nome do Repositório</h2>
+                <h2 id="repo-title" class="mb-4">Nome do Repositório</h2>
                 <hr class="border-bottom border-5 border-dark">
             </div>
             <div class="col-md-12">
                 <h2><strong>Descrição:</strong></h2>
-                <p>Esse espaço é reservado à descrição do Repositório selecionado na página anterior.</p>
+                <p id="repo-description">Esse espaço é reservado à descrição do Repositório selecionado na página anterior.</p>
                 <div class="row mt-12">
                     <div class="col-md-6">
-                        <h2><strong>Data de Criação:</strong></h2>
-                        <p>16/04/2024</p>
-                        <h2><strong>Linguagem:</strong></h2>
-                        <p>Javascript</p>
                         <h2><strong>Link de Acesso:</strong></h2>
-                        <p><a href="https://github.com">https://github.com</a></p>
-                        <h2><strong>Tópicos:</strong></h2>
-                        <div style="margin-top: 10px;">
-                            <button type="button" class="btn btn-dark bg-dark">Javascript</button>
-                            <button type="button" class="btn btn-dark bg-dark">HTML</button>
-                            <button type="button" class="btn btn-dark bg-dark">CSS</button>
-                        </div>
+                        <p><a id="repo-link" href="#">https://github.com</a></p>
                     </div>
                     <div class="col-md-6">
-                        <p><img src="assets/foto Tiago.jpg" style="height: 120px; width: 120px; margin-bottom: 10px; margin-top: 20px; margin-right: 10px;" alt="imgproprietario">
-                        <h2>Proprietário: </h2>Tiago Assunção de Sousa</p>
-                        <p><h2>Forks:</h2>0</p>
-                        <p><h2>Tipo de Licença: </h2>Nenhuma</p>
-                        <p><img src="assets/estrelacinza.png" style="height: 40px; width: 40px; margin-bottom: 10px; margin-top: 20px; margin-right: 10px;" alt="Estrela">
-                        <span> 5 </span></p>
-                        <p><img src="assets/User-Account-Person-PNG-File.png" style="height: 40px; width: 40px; margin-bottom: 10px; margin-top: 20px; margin-right: 10px;" alt="Ícone">
-                            <span> 1 </span></p>
+                        <p><img src="assets/estrelacinza.png" style="height: 40px; width: 40px;" alt="Estrela">
+                        <span id="repo-stars"> 5 </span></p>
+                        <p><img src="assets/User-Account-Person-PNG-File.png" style="height: 40px; width: 40px;" alt="Ícone">
+                            <span id="repo-visits"> 1 </span></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script>src="../assets/scripts/repo.js"</script>
 </body>
 <footer class="bg-secondary text-light py-4">
     <div class="container">
