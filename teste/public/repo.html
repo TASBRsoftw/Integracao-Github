@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories</title>
+</head>
+<body>
+    <h1>GitHub Repositories</h1>
+    <pre id="reposData"></pre>
+
+    <script>
+        async function fetchRepoData() {
+            try {
+                const dataResponse = await fetch('/data');
+                const data = await dataResponse.json();
+
+                document.getElementById('reposData').textContent = JSON.stringify(data.repositories, null, 2);
+            } catch (error) {
+                console.error('Erro ao buscar dados:', error);
+            }
+        }
+
+        fetchRepoData();
+    </script>
+</body>
+</html>

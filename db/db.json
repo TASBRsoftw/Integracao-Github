@@ -1,2 +1,61 @@
-{}
-  
+{
+  "conteudosSugeridos": [
+    {
+      "id": 1,
+      "titulo": "Artigo sobre JavaScript",
+      "descricao": "Um guia completo sobre JavaScript.",
+      "imagemCapa": "https://example.com/imagem1.jpg",
+      "url": "https://example.com/artigo1"
+    },
+    {
+      "id": 2,
+      "titulo": "Tutorial de CSS",
+      "descricao": "Aprenda CSS de forma prática.",
+      "imagemCapa": "https://example.com/imagem2.jpg",
+      "url": "https://example.com/tutorial2"
+    },
+    {
+      "id": 3,
+      "titulo": "Tutorial de CSS",
+      "descricao": "Aprenda CSS de forma prática.",
+      "imagemCapa": "https://example.com/imagem2.jpg",
+      "url": "https://example.com/tutorial2"
+    },
+    {
+      "id": 4,
+      "titulo": "Tutorial de CSS",
+      "descricao": "Aprenda CSS de forma prática.",
+      "imagemCapa": "https://example.com/imagem2.jpg",
+      "url": "https://example.com/tutorial2"
+    },
+    {
+      "id": 5,
+      "titulo": "Tutorial de CSS",
+      "descricao": "Aprenda CSS de forma prática.",
+      "imagemCapa": "https://example.com/imagem2.jpg",
+      "url": "https://example.com/tutorial2"
+    }
+    
+  ],
+  "colegasDeTrabalho": [
+    {
+      "id": 1,
+      "foto": "https://avatars.githubusercontent.com/u/103540662?v=4",
+      "nome": "Raul Fernandes",
+      "perfilGitHub": "https://github.com/RaulFernandesGoulart"
+    },
+    {
+      "id": 1,
+      "foto": "https://avatars.githubusercontent.com/u/63589918?v=4",
+      "nome": "LeonardoVieira",
+      "perfilGitHub": "https://github.com/LeonardoVieiraM"
+    },
+    {
+      "id": 3,
+      "foto": "https://avatars.githubusercontent.com/u/104282903?v=4",
+      "nome": "João Gabriel Perez",
+      "perfilGitHub": "https://github.com/JoaoGperez"
+    }
+
+  ]
+}
