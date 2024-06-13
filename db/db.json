@@ -1,39 +1,39 @@
 {
-  "conteudosSugeridos": [
+ "conteudosSugeridos": [
     {
       "id": 1,
-      "titulo": "Artigo sobre JavaScript",
-      "descricao": "Um guia completo sobre JavaScript.",
-      "imagemCapa": "https://example.com/imagem1.jpg",
-      "url": "https://example.com/artigo1"
+      "titulo": "JavaScript Mozilla",
+      "descricao": "Aprenda JavaScript de forma gratuita.",
+      "imagemCapa": "https://th.bing.com/th/id/OIP.X4hQyBZp9cvNv_dls-HotQHaE8?rs=1&pid=ImgDetMain",
+      "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
     },
     {
       "id": 2,
-      "titulo": "Tutorial de CSS",
-      "descricao": "Aprenda CSS de forma prática.",
-      "imagemCapa": "https://example.com/imagem2.jpg",
-      "url": "https://example.com/tutorial2"
+      "titulo": "HTML Mozilla",
+      "descricao": "Aprenda HTML de forma gratuita.",
+      "imagemCapa": "https://codybonney.com/images/16x9/tags/html.png",
+      "url": "https://developer.mozilla.org/pt-BR/docs/Web/HTML"
     },
     {
       "id": 3,
-      "titulo": "Tutorial de CSS",
-      "descricao": "Aprenda CSS de forma prática.",
-      "imagemCapa": "https://example.com/imagem2.jpg",
-      "url": "https://example.com/tutorial2"
+      "titulo": "CSS Mozilla",
+      "descricao": "Aprenda CSS de forma gratuita.",
+      "imagemCapa": "https://th.bing.com/th/id/OIP.rM8t0CGxBDN6eaJGgJyJwAAAAA?rs=1&pid=ImgDetMain",
+      "url": "https://developer.mozilla.org/pt-BR/docs/Web/CSS"
     },
     {
       "id": 4,
-      "titulo": "Tutorial de CSS",
-      "descricao": "Aprenda CSS de forma prática.",
-      "imagemCapa": "https://example.com/imagem2.jpg",
-      "url": "https://example.com/tutorial2"
+      "titulo": "HTTP Mozilla",
+      "descricao": "Aprenda HTTP de forma gratuita.",
+      "imagemCapa": "https://th.bing.com/th/id/OIP.rK_7FB8RX2WftmfXlXJY0AHaEK?w=312&h=180&c=7&r=0&o=5&pid=1.7",
+      "url": "https://developer.mozilla.org/pt-BR/docs/Web/HTTP"
     },
     {
       "id": 5,
-      "titulo": "Tutorial de CSS",
-      "descricao": "Aprenda CSS de forma prática.",
-      "imagemCapa": "https://example.com/imagem2.jpg",
-      "url": "https://example.com/tutorial2"
+      "titulo": "Destaques PUC Minas",
+      "descricao": "Portal de Destaques do site da PUC Minas.",
+      "imagemCapa": "https://www.vestibulandoweb.com.br/wp-content/uploads/2022/07/logo-puc-minas.jpg",
+      "url": "https://www.pucminas.br/destaques/Paginas/default.aspx"
     }
     
   ],
