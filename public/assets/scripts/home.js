@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('perfil-twitter').textContent = user.twitter_username || 'Nenhum';
         document.getElementById('perfil-localizacao').textContent = user.location || 'Nenhum';
         document.getElementById('perfil-link').href = user.html_url;
+        document.getElementById('perfil-link').textContent = user.html_url
 
         // Preencher botões de redes sociais
         fetchGitHubData(`users/${username}/social_accounts`).then(accounts => {
