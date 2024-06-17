@@ -42,24 +42,28 @@
       "id": 1,
       "foto": "https://avatars.githubusercontent.com/u/103540662?v=4",
       "nome": "Raul Fernandes",
+      "descricao": "Estudante de Engenharia de Software na PUC Minas" ,
       "perfilGitHub": "https://github.com/RaulFernandesGoulart"
     },
     {
       "id": 1,
       "foto": "https://avatars.githubusercontent.com/u/63589918?v=4",
       "nome": "LeonardoVieira",
+      "descricao": "Estudante de Engenharia de Software na PUC Minas" ,
       "perfilGitHub": "https://github.com/LeonardoVieiraM"
     },
     {
       "id": 3,
       "foto": "https://avatars.githubusercontent.com/u/104282903?v=4",
       "nome": "João Gabriel Perez",
+      "descricao": "Estudante de Engenharia de Software na PUC Minas" ,
       "perfilGitHub": "https://github.com/JoaoGperez"
     },
     {
       "id": 4,
       "foto": "https://avatars.githubusercontent.com/u/83774024?v=4",
       "nome": "Yan Resende",
+      "descricao": "Estudante de Engenharia de Software na PUC Minas" ,
       "perfilGitHub": "https://github.com/yanresende"
     }
 

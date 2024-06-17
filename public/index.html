@@ -22,32 +22,51 @@
     <div class="container mt-5 py-5">
         <div id="secao1" class="row mt-5">
             <div class="col-md-12">
-                <h2 class="mb-4">Perfil</h2>
+                <h2 class="mb-4">Perfil GitHub</h2>
                 <hr class="border-bottom border-5 border-dark">
             </div>
             <div class="col-md-4">
                 <img id="perfil-imagem" class="img-fluid" alt="Imagem Principal">
             </div>
             <div class="col-md-8">
-                <h2><strong id="perfil-nome">Tiago Assunção de Sousa</strong></h2>
-                <p id="perfil-descricao"></p>
+                <h2><strong id="usuario-nome"></strong></h2>
+                <strong id="perfil-nome"></strong>
+                <hr>
+                <p><strong>Bio: </strong><span id="perfil-descricao"></span></p>
                 <div class="row mt-5">
                     <div class="col-md-8">
+                        <p><b>Seguidores:</b> <span id="perfil-seguidores"></span></p>
+                        <p><b>Blog do Usuário:</b> <a id="perfil-blog" href="index.html"></a></p>
+                        <p><b>Email: </b><span id="perfil-email"></span></p>
+                        <p><b>Twitter:</b> <span id="perfil-twitter"></span></p>
                         <p><b>Localização:</b> <span id="perfil-localizacao"></span></p>
                         <p><b>Perfil GitHub:</b> <a id="perfil-link" href="./index.html">clique aqui para acessar o perfil no github</a></p>
-                        <div style="margin-top: 60px;">
-                            <button type="button" class="btn btn-light bg-light">
-                                <b>tiagoasousabsb@gmail.com</b>
-                            </button>
-                            <a href="https://www.linkedin.com/in/tiago-assunção-213154282" class="btn btn-light bg-light" style="display: inline-flex; align-items: center;">
-                                <img src="https://th.bing.com/th/id/R.c17d04b81f5fba88333238859471c312?rik=K8gu7XJnCkBM8A&pid=ImgRaw&r=0" alt="Icon" style="height: 40px; width: 40px; margin-right: 5px;">
-                                <span>LinkedIn</span>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div id="secao-social" class="row mt-5">
+            <div class="col-md-12">
+                <h2 class="mb-4">Redes Sociais</h2>
+                <hr class="border-bottom border-5 border-dark">
+            </div>
+            <div class="row mt-5" style="margin-top: 60px;">
+                <div class="col-md-4">
+                <button id="linkedin-button" type="button" class="btn btn-light bg-light" href="a" >
+                    <img src="https://th.bing.com/th?id=OIP.1R2nLh9Gdbpa75yVbtTFYgHaHY&w=250&h=249&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="LinkedIn" style="height: 100px; width: 100px; margin-right: 5px;">
+                </button>
+                </div>
+                <div class="col-md-4">
+                <button id="twitter-button" type="button" class="btn btn-light bg-light" href="a">
+                    <img src="https://th.bing.com/th?id=OIP.ZweGejPwbT5wwshQ2-8qUQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Twitter" style="height: 100px; width: 100px; margin-right: 5px;">
+                </button>
+                </div>
+                <div class="col-md-4">
+                <button id="instagram-button" type="button" class="btn btn-light bg-light" href="a" >
+                    <img src="https://th.bing.com/th?id=OIP.TxdQEKMvxsSmiuG1-zhb7AHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Instagram" style="height: 100px; width: 100px; margin-right: 5px;">
+                </button>
+                </div>
 
         <div id="secao2" class="row mt-5 py-5">
             <div class="col-md-12">
@@ -96,99 +115,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-    const username = 'TASBRsoftw'; // Substitua pelo seu nome de usuário do GitHub
-
-    // Função para obter dados do JSON Server
-    async function fetchData(url) {
-        const response = await fetch(url);
-        return response.json();
-    }
-
-    // Função para obter dados do GitHub
-    async function fetchGitHubData(endpoint) {
-        const response = await fetch(`https://api.github.com/${endpoint}`);
-        return response.json();
-    }
-
-    // Preencher dados do perfil
-    fetchGitHubData(`users/${username}`).then(data => {
-        document.getElementById('perfil-imagem').src = data.avatar_url;
-        document.getElementById('perfil-nome').textContent = data.name;
-        document.getElementById('perfil-descricao').textContent = data.bio;
-        document.getElementById('perfil-localizacao').textContent = data.location;
-        document.getElementById('perfil-link').href = data.html_url;
-        document.getElementById('perfil-link').textContent = data.html_url;
-    });
-
-    // Preencher repositórios
-    fetchGitHubData(`users/${username}/repos`).then(repos => {
-    const repositoriosDiv = document.getElementById('repositorios');
-    repos.forEach(repo => {
-        const repoCard = `
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">${repo.name}</h5>
-                        <p class="card-text">${repo.description || 'Sem descrição'}</p>
-                        <a href="repo.html?id=${repo.id}" class="btn btn-primary">Ver Detalhes</a>
-                    </div>
-                </div>
-            </div>
-        `;
-        repositoriosDiv.insertAdjacentHTML('beforeend', repoCard);
-    });
-});
-
-
-    // Preencher conteúdo sugerido
-    fetchData('http://localhost:3000/conteudosSugeridos').then(conteudos => {
-        const carouselIndicators = document.getElementById('carousel-indicators');
-        const carouselInner = document.getElementById('carousel-inner');
-
-        conteudos.forEach((conteudo, index) => {
-            const activeClass = index === 0 ? 'active' : '';
-            const indicator = `<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${index}" class="${activeClass}" aria-current="true" aria-label="Slide ${index + 1}"></button>`;
-            const item = `
-                <div class="carousel-item ${activeClass}">
-                    <img src="${conteudo.imagemCapa}" class="d-block w-100" style = "height: 800px; width: auto" alt="${conteudo.titulo}">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>${conteudo.titulo}</h5>
-                        <p>${conteudo.descricao}</p>
-                        <a href="${conteudo.url}" class="btn btn-primary">Leia Mais</a>
-                    </div>
-                </div>
-            `;
-            carouselIndicators.insertAdjacentHTML('beforeend', indicator);
-            carouselInner.insertAdjacentHTML('beforeend', item);
-        });
-    });
-
-    // Preencher colegas de trabalho
-    fetchData('http://localhost:3000/colegasDeTrabalho').then(colegas => {
-        const colegasDiv = document.getElementById('colegas');
-        colegas.forEach(colega => {
-            const colegaCard = `
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="${colega.foto}" class="card-img-top" alt="${colega.nome}">
-                        <div class="card-body">
-                            <h5 class="card-title">${colega.nome}</h5>
-                            <a href="${colega.perfilGitHub}" class="btn btn-primary">Ver no GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            `;
-            colegasDiv.insertAdjacentHTML('beforeend', colegaCard);
-        });
-    });
-});
-
-    </script>    
+    <script src= "assets/scripts/home.js"></script>    
 </body>
-<footer class="bg-secondary text-light py-4">
-    <div class="container">
+<footer class="bg-secondary text-light py-4 w-100">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
                 <h5>Responsável pelo Site:</h5>
